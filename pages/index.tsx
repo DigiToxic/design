@@ -29,27 +29,27 @@ export default function Home(): JSX.Element {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center mt-40 border-2 rounded-xl shadow-md shadow-blue-500">
-        <div className="p-[40px]">
+      <div className="flex flex-col justify-center items-center mt-40 border-2 rounded-xl shadow-md shadow-blue-500 max-[1100px]:w-[81%]">
+        <div className="p-[40px] max-[1100px]:w-full">
           <div className="flex justify-center my-10 font-bold text-xl">
             <p className="text-white">URL Similarity Checker</p>
           </div>
 
-          <div className="flex justify-between">
-            <div className="mb-10 mr-10">
+          <div className="flex justify-between max-[600px]:flex-col">
+            <div className="mb-10 mr-10 max-[1100px]:w-full max-[600px]:mr-0">
               <input
                 placeholder="Enter first URL"
                 value={url1}
                 onChange={(e) => setUrl1(e.target.value)}
-                className="rounded shadow-md shadow-blue-500 w-96 pl-1"
+                className="rounded shadow-md shadow-blue-500 w-96 pl-1 max-[1100px]:w-full"
               />
             </div>
-            <div className="mb-10">
+            <div className="mb-10 max-[1100px]:w-full">
               <input
                 placeholder="Enter second URL"
                 value={url2}
                 onChange={(e) => setUrl2(e.target.value)}
-                className="rounded shadow-md shadow-blue-500 w-96"
+                className="rounded shadow-md shadow-blue-500 w-96 max-[1100px]:w-full"
               />
             </div>
           </div>
